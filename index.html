@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop Watch</title>
+    <link rel="icon" type="png" href="time-tracking.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <!-- import css file -->
+    <link rel="stylesheet" href="stopwatch.css" />
+
+  </head>
+  <body>
+  
+    <!-- main container -->
+    <div id="container">
+      <h4 id="intro" class="animate__animated animate__backInLeft">Akash Stop watch Module</h4>
+      <!-- Time container -->
+      <!-- hr, min, sec, msec -->
+      <div id="time">
+        <span class="digit" id="hr">00</span>
+        <!-- colon only display in small devices -->
+        <span class="colon">:</span>
+        <span class="text">Hr</span>
+
+        <span class="digit" id="min">00</span>
+
+        <!-- colon only display in small devices -->
+        <span class="colon">:</span>
+        <span class="text">Min</span>
+
+        <span class="digit" id="sec">00</span>
+        <span class="text">Sec</span>
+
+        <span class="digit" id="msec">00</span>
+      </div>
+
+      <!-- btns-container -->
+      <div id="btns-container">
+        <!-- Start button -->
+        <button id="start" class="buttons" onclick="start()">START</button>
+        <!-- Reset button -->
+        <button id="reset" class="buttons" onclick="reset()">RESET</button>
+        <!-- Stop btn -->
+        <button id="stop" class="buttons" onclick="stop()">STOP</button>
+      </div>
+    </div>
+
+    <!-- import javaScript file -->
+    <script src="stopwatch1.js"></script>
+   
+  </body>
+</html>
